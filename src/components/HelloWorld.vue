@@ -24,34 +24,6 @@ const downloadExcel = () => {
       URL.revokeObjectURL(url); // 释放内存
       return
     }
-
-    /*let blob;
-    const filename = 'noModelWrite123.xlsx'
-    // 处理不同类型的数据
-    if (res instanceof Blob) {
-      blob = res;
-    } else if (res instanceof ArrayBuffer) {
-      blob = new Blob([res], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' });
-    } else {
-      blob = new Blob([res], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' });
-    }
-
-    if (typeof vm.navigator.msSaveBlob !== 'undefined') {
-      // IE
-      vm.navigator.msSaveBlob(blob, filename);
-    } else {
-      // Chrome, Firefox, Edge
-      const link = document.createElement('a');
-      const url = vm.URL.createObjectURL(blob);
-      link.href = url;
-      link.download = filename;
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-      vm.URL.revokeObjectURL(url);
-    }*/
-
-
   })
 }
 </script>
