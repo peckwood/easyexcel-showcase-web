@@ -1,4 +1,4 @@
-This project needs a backend project: [peckwood/easyexcel-showcase](https://github.com/peckwood/easyexcel-showcase)
+This project has a backend project: [peckwood/easyexcel-showcase](https://github.com/peckwood/easyexcel-showcase)
 
 # Vue 3 + TypeScript + Vite
 

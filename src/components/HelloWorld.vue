@@ -10,7 +10,7 @@ const vm: any = window
 const downloadExcel = () => {
   axios({
     method: 'get',
-    url: 'api/web-demo01',
+    url: '/api/web-demo01',
     responseType: 'blob'
   }).then((response)=> {
     const contentType = response.headers['content-type'];
