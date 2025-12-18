@@ -11,7 +11,6 @@ const downloadExcel = () => {
     responseType: 'blob'
   }).then((response)=> {
     const contentType = response.headers['content-type'];
-    debugger;
     if (contentType == "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;charset=utf-8") {
       let blob = new Blob([response.data], {type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'});
       let url = window.URL.createObjectURL(blob);
